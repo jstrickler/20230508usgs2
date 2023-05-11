@@ -1,4 +1,13 @@
 
+class ListClone(list):
+    pass
+
+colors = ListClone()
+colors.append('red')
+colors.append('coral')
+print(f"colors: {colors}")
+
+
 
 class MultiIndexList(list):  # Define new class that inherits from list
 
@@ -30,7 +39,8 @@ if __name__ == '__main__':
     print(m[5, 2, 0])  # Index with tuple
     print(m[:4])
     print(len(m))
-    print(m[5, ])
+    print(m[5])
+    print(m[5,])
     print(m[:2, -2:])
     print()
     print(m)
@@ -39,4 +49,13 @@ if __name__ == '__main__':
     print()
     for fruit in m:
         print(fruit)
-    print(len(fruit))
+
+class Frank(list, dict):
+    pass
+
+f = Frank()
+print(f)
+
+
+
+

@@ -6,7 +6,7 @@ Syntax:
 area = circle_area(diameter)
 area = rectangle_area(length, width)
 area = square_area(side)
-"""
+from functools import lru_cache
 import math   # load math.py
 
 PI = math.pi

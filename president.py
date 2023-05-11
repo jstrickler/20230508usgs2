@@ -1,6 +1,7 @@
 from datetime import date
 
 class President():
+    ANIMAL = "snail darter"
     def __init__(self, index):
         self._get_data(index)
 
