@@ -1,8 +1,8 @@
 import sys
 import numpy as np
-data = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [20, 30, 40]]
+data = [[1, 2, 3], [4.0, 5, 6], [7, 8, 9], [20, 30, 40]]
 
-a = np.array(data)  # create array from nested sequences
+a = np.array(data, dtype=np.float16)  # create array from nested sequences
 print(a, '\n')
 
 print("a.ndim (# dimensions):", a.ndim)  # get number of dimensions
@@ -10,6 +10,8 @@ print("a.shape (lengths of axes/dimensions):", a.shape)  # get shape
 print("a.size (number of elements in array):", a.size)
 print("a.itemsize (size of one item):", a.itemsize)
 print("a.nbytes (number of bytes used):", a.nbytes)
+print(f"a.dtype: {a.dtype}")
+
 print("sys.getsizeof(data):", sys.getsizeof(data))
 print()
 
@@ -17,7 +19,7 @@ a_zeros = np.zeros((3, 5), dtype=np.uint32)  # create array of specified shape a
 print(a_zeros)
 print()
 
-a_ones = np.ones((2, 3, 4, 5))  # create array of specified shape, initialized to ones
+a_ones = np.ones((2, 3, 4, 5), dtype=np.uint16)  # create array of specified shape, initialized to ones
 print(a_ones)
 print()
 

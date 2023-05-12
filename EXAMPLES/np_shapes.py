@@ -26,3 +26,7 @@ a2.shape = 2, 5, 4  # reshape to 2x5x4
 
 print(a2)
 print()
+
+x = a2.copy()
+x.shape= 8, 5
+print(x)

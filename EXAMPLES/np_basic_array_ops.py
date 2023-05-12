@@ -4,8 +4,10 @@ a = np.array(
     [
         [5, 10, 15],
         [2, 4, 6],
-        [3, 6, 9, ],
+        [3, 6, 9],
     ]
+    , 
+    dtype=np.int32,
 )  # create 2D array
 
 b = np.array(

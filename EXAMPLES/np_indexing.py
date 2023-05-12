@@ -19,4 +19,7 @@ print('a[0,::2] =>', a[0, ::2])  # every second element of first row
 print()
 print('a[::2] =>', a[::2])  # every second row
 print()
-print('a[:3, -2:] =>', a[:3, -2:])  # every third element of every second row
+print('a[:3, -2:] =>', a[:3, -2:])  # first 3 rows, last 2 columns
+
+total = a[:3, -2:].sum()
+print(f"total: {total}")

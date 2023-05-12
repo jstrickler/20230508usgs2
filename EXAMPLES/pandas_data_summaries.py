@@ -19,4 +19,8 @@ print(df.describe(include='all'))
 print_header("df.info()")
 print(df.info())
 
+print_header("df.info(memory_usage='deep')")
+print(df.info(memory_usage='deep'))
+
+
 
